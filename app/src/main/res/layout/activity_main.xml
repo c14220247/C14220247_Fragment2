@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Container untuk Fragment -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Bagian navigasi -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonHalaman1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halaman 1" />
+
+            <Button
+                android:id="@+id/buttonHalaman2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halaman 2" />
+
+            <Button
+                android:id="@+id/buttonHalaman3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halaman 3" />
+        </LinearLayout>
+
+        <!-- Container Fragment -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>
